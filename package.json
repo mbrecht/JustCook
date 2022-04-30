@@ -11,7 +11,7 @@
     "fix:code": "yarn test:code --fix",
     "fix": "yarn fix:code && yarn fix:other",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
-    "test": "yarn lint && jest --coverage"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "@babel/core": "^7.17.10",
