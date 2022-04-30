@@ -20,5 +20,8 @@
         "printWidth": 200
       }
     }
-  ]
+  ],
+  "importOrder": [""],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

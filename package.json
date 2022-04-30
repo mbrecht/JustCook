@@ -25,6 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^16.2.4",
+    "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@types/enzyme": "^3.10.12",
     "@types/jest": "^27.4.1",
     "enzyme": "^3.11.0",
