@@ -3,15 +3,15 @@
     "browser": true,
     "node": true
   },
-  "plugins": ["prettier"],
   "extends": ["prettier", "next/core-web-vitals"],
   "parserOptions": {
-    "ecmaVersion": 8,
-    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "ecmaVersion": 8,
+    "sourceType": "module"
   },
+  "plugins": ["prettier"],
   "rules": {
     "curly": 2,
     "dot-notation": 2,
@@ -43,15 +43,6 @@
     "prefer-const": 2,
     "prefer-promise-reject-errors": 2,
     "prettier/prettier": 2,
-    "sort-imports": 2,
-    "sort-keys": [
-      2,
-      "asc",
-      {
-        "caseSensitive": true,
-        "natural": true
-      }
-    ],
     "sort-vars": 2,
     "strict": [2, "global"]
   }

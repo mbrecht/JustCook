@@ -3,16 +3,11 @@
   "bracketSpacing": false,
   "endOfLine": "lf",
   "htmlWhitespaceSensitivity": "css",
+  "importOrder": [""],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "jsonRecursiveSort": true,
   "jsxBracketSameLine": false,
-  "printWidth": 80,
-  "proseWrap": "preserve",
-  "requirePragma": false,
-  "semi": true,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "trailingComma": "all",
-  "useTabs": false,
-  "vueIndentScriptAndStyle": true,
   "overrides": [
     {
       "files": "*.json",
@@ -21,7 +16,13 @@
       }
     }
   ],
-  "importOrder": [""],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": true
 }
