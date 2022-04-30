@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
+yarn fix
+
 yarn lint
