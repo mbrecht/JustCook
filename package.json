@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fix:other": "yarn prettier --write",
+    "fix:code": "yarn test:code --fix",
+    "fix": "yarn fix:code && yarn fix:other",
+    "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
+    "test:other": "yarn prettier --list-different",
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
+    "test": "yarn test:other && yarn test:code"
   },
   "dependencies": {
     "next": "12.1.5",
@@ -15,6 +22,9 @@
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2"
   }
 }
