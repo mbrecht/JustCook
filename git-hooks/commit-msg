@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+# variables
+commit_message="$1"
+
+# use git-conventional-commits, see https://github.com/qoomon/git-conventional-commits
+npx commitlint --edit "$commit_message"
+
+# or verify $commit_message with your own tooling
+# ...
