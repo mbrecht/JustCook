@@ -38,18 +38,5 @@
     "lint-staged": "12.4.1",
     "prettier": "2.6.2",
     "ts-jest": "^27.1.4"
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix"
-    ],
-    "*.{json,md,scss,yaml,yml}": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && echo test && npx commitlint"
-    }
   }
 }
