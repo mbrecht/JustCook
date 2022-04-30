@@ -12,7 +12,9 @@
     "fix": "yarn fix:other && yarn fix:code",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
     "test": "jest --coverage",
-    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx ."
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
+    "preci": "rm -rf node_modules",
+    "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@babel/core": "^7.17.10",
