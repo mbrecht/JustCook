@@ -9,9 +9,12 @@
     "lint": "next lint",
     "fix:other": "yarn prettier --write",
     "fix:code": "yarn test:code --fix",
-    "fix": "yarn fix:code && yarn fix:other",
+    "fix": "yarn fix:other && yarn fix:code",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .js,.jsx .",
+    "preci": "rm -rf node_modules",
+    "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@babel/core": "^7.17.10",
@@ -37,6 +40,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "jest": "^27.0.0",
     "prettier": "2.6.2",
+    "prettier-plugin-sort-json": "^0.0.2",
     "ts-jest": "^27.1.4"
   }
 }
