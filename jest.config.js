@@ -2,13 +2,13 @@ module.exports = {
   roots: ['<rootDir>/__tests__/'],
   preset: 'ts-jest',
   transform: {
-    '^.+\\.(ts|tsx)?$': 'ts-jest',
-    '^.+\\.(js|jsx)$': 'babel-jest',
+    '^.+\\.([t|j]s(x)?)$': 'babel-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   verbose: true,
+  // coverageDirectory: './__tests__/__coverage__/',
   collectCoverage: true,
-  coverageDirectory: './__tests__/__coverage__/',
+  collectCoverageFrom: ['src/**/*.{js,jsx,ts,tsx}'],
   coverageThreshold: {
     global: {
       branches: 80,
@@ -22,6 +22,6 @@ module.exports = {
     '.*/__coverage__/.*', // ignore anything in the coverage folder
   ],
   // Setup Enzyme
-  setupFilesAfterEnv: ['<rootDir>/__tests__/setupEnzyme.js'],
+  setupFiles: ['<rootDir>/__tests__/setupEnzyme.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
 };
