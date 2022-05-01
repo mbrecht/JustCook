@@ -1,6 +1,6 @@
-import Meal from '../../../../src/core/entities/Meal';
-import Template from '../../../../src/core/entities/Template';
-import generateMeals from '../../../../src/core/useCases/generateMeals';
+import Meal from '../../../src/core/entities/Meal';
+import Template from '../../../src/core/entities/Template';
+import generateMeals from '../../../src/core/useCases/generateMeals';
 
 const spaghetti: Meal = {
   title: 'spaghetti',

@@ -1,6 +1,6 @@
-import Meal from '../../entities/Meal';
-import Template, {category} from '../../entities/Template';
-import selectRandomEntry from '../../utils/selectRandomEntry';
+import Meal from '../entities/Meal';
+import Template, {category} from '../entities/Template';
+import selectRandomEntry from '../utils/selectRandomEntry';
 
 type Props = {
   meals: Array<Meal>;
