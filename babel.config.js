@@ -1,5 +1,16 @@
-/**
- * Only used by jest to solve error: "SyntaxError: Cannot use import statement outside a module"
- */
-
-module.exports = {presets: ['@babel/preset-env', 'next/babel']};
+module.exports = {
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: 'current',
+        },
+      },
+    ],
+    '@babel/preset-typescript',
+    '@babel/preset-react',
+    'next/babel',
+  ],
+  plugins: ['@babel/plugin-transform-runtime'],
+};
