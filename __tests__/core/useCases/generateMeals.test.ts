@@ -24,10 +24,12 @@ const template: Template = [monday, tuesday];
 describe('generateMeals', () => {
   const generated = generateMeals({meals, template});
 
-  it('should have spaghetti for the first day', () => {
+  it('should filter by category', () => {
     expect(generated[0]).toEqual(spaghetti);
-  });
-  it('should have burgers for the second day', () => {
     expect(generated[1]).toEqual(burger);
+  });
+
+  it('should return meals equal to template length', () => {
+    expect(generated.length).toBe(template.length);
   });
 });
