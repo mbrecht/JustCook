@@ -20,7 +20,7 @@ function selectMeal(meals: Array<Meal>, category: string): Meal {
 /**
  * generates meals for every entry in template
  */
-export default function generateMeals({meals, template}: Props) {
+export default function generateMeals({meals, template}: Props): Meal[] {
   // each entry in template will decide a meal for that day
   return template.map(day => {
     // choose category
