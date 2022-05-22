@@ -1,0 +1,33 @@
+{
+  "meals": [
+    {
+      "category": ["grill"],
+      "title": "burger"
+    },
+    {
+      "category": ["pasta"],
+      "title": "spaghetti"
+    },
+    {
+      "category": ["wraps"],
+      "title": "buffalo chicken wrap"
+    },
+    {
+      "category": ["vegetarian", "wraps"],
+      "title": "veggie wraps"
+    },
+    {
+      "category": ["slow-cooker"],
+      "title": "crock pot chicken and dumplings"
+    },
+    {
+      "category": ["mexican"],
+      "title": "quesadillas"
+    },
+    {
+      "category": ["americana"],
+      "title": "fried chicken"
+    }
+  ],
+  "template": [["grill"], ["pasta"], ["wraps"], ["vegetarian"], ["slow-cooker"], ["mexican"], ["americana"]]
+}
