@@ -7,7 +7,8 @@ export default async function handler(
 ) {
   switch (req.method) {
     case 'GET':
-      return get(req, res);
+      await get(req, res);
+      break;
     default:
       res.statusMessage = 'Method not supported';
       res.status(405).end();
