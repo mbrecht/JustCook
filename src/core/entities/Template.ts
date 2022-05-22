@@ -1,10 +1,10 @@
 export type category = string;
 
-export type TemplateDay = Array<category>;
+export type Day = Array<category>;
 
 /**
  * A template is an array of meal options. Each
  */
-type Template = Array<TemplateDay>;
+type Template = Array<Day>;
 
 export default Template;

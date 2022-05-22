@@ -1,5 +1,5 @@
 import Meal from '../entities/Meal';
-import Template, {category} from '../entities/Template';
+import Template, {Day} from '../entities/Template';
 import selectRandomEntry from '../utils/selectRandomEntry';
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   template: Template;
 };
 
-function selectCategory(day: category) {
+function selectCategory(day: Day) {
   return selectRandomEntry<string>(day);
 }
 
