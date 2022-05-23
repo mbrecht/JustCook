@@ -1,10 +1,9 @@
 import MealPlanner from '../../src/pages/meal-planner';
-import {shallow} from 'enzyme';
+import {render} from '@testing-library/react';
 import React from 'react';
 
 describe('MealPlanner', () => {
-  const wrapper = shallow(<MealPlanner />);
   it('should exist', () => {
-    expect(wrapper).toBeDefined();
+    render(<MealPlanner />);
   });
 });
