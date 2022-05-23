@@ -1,5 +1,5 @@
 import RecipeCard from '../../src/components/RecipeCard';
-import {ReactWrapper, mount} from 'enzyme';
+import {render, screen} from '@testing-library/react';
 
 const data = {
   thumbnail: 'http://www.test.com/pic',
@@ -8,21 +8,23 @@ const data = {
 };
 
 describe('RecipeCard component', () => {
-  let wrapper: ReactWrapper;
-
   beforeEach(() => {
-    wrapper = mount(<RecipeCard {...data} />);
+    render(<RecipeCard {...data} />);
   });
 
   it('should display a thumbnail', () => {
-    expect(wrapper.find('img').props().src).toBe(data.thumbnail);
+    const img = screen.getByRole('img');
+    screen.debug();
+    expect(img.src).toContain(data.thumbnail);
   });
 
   it('should display a title', () => {
-    expect(wrapper.find('p').text()).toBe(data.title);
+    const p = screen.getByRole('link', {name: data.title});
+    expect(p).toBeDefined();
   });
 
   it('should contain a link', () => {
-    expect(wrapper.find('a').props().href).toBe(data.url);
+    const a = screen.getByRole('link');
+    expect(a.href).toBe(data.url);
   });
 });
