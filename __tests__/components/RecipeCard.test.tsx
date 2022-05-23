@@ -15,13 +15,11 @@ describe('RecipeCard component', () => {
   });
 
   it('should display a thumbnail', () => {
-    expect(wrapper.find('.recipe-card-thumbnail').props().src).toBe(
-      data.thumbnail,
-    );
+    expect(wrapper.find('img').props().src).toBe(data.thumbnail);
   });
 
   it('should display a title', () => {
-    expect(wrapper.find('.recipe-card-title').text()).toBe(data.title);
+    expect(wrapper.find('p').text()).toBe(data.title);
   });
 
   it('should contain a link', () => {
