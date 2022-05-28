@@ -1,12 +1,7 @@
+import Recipe from '../../core/entities/Recipe';
 import styles from '../../styles/components/RecipeCard.module.css';
 
-type Props = {
-  thumbnail: string;
-  title: string;
-  url: string;
-};
-
-export default function RecipeCard({thumbnail, title, url}: Props) {
+export default function RecipeCard({thumbnail, title, url}: Recipe) {
   return (
     <div className={styles.container}>
       <a href={url}>
