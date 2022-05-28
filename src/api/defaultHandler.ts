@@ -1,9 +1,6 @@
-import {NextApiRequest, NextApiResponse} from 'next';
+import {NextApiResponse} from 'next';
 
-export default function defaultHandler(
-  _: NextApiRequest,
-  res: NextApiResponse,
-) {
+export default function defaultHandler(_, res: NextApiResponse) {
   res.statusMessage = 'Method not supported';
   res.status(405).end();
 }
