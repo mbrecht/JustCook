@@ -1,5 +1,5 @@
 import Meal from '../../core/entities/Meal';
-import RecipeCard from '../MealCard';
+import styles from '../../styles/components/WeeklyView.module.css';
 import Day from './Day';
 
 type WeeklyViewProps = {
@@ -8,7 +8,7 @@ type WeeklyViewProps = {
 
 export default function WeeklyView({week}: WeeklyViewProps) {
   return (
-    <section>
+    <section className={styles.container}>
       {week.map((meals, i) => (
         <Day meals={meals} day={i} key={JSON.stringify(meals)} />
       ))}

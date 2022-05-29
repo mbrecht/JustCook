@@ -25,5 +25,9 @@ export default function MealPlanner() {
       });
   }, []);
 
-  return <div>{meals.length && <WeeklyView week={meals} />}</div>;
+  return (
+    <div style={{width: '100vw', padding: '32px'}}>
+      {meals.length && <WeeklyView week={meals} />}
+    </div>
+  );
 }

@@ -1,4 +1,5 @@
 import Meal from '../../core/entities/Meal';
+import styles from '../../styles/components/WeeklyView.module.css';
 import RecipeCard from '../MealCard';
 
 export type DayProps = {
@@ -20,7 +21,7 @@ const days = [
 export default function Day({meals, day}: DayProps) {
   return (
     <section>
-      <h1>{days[day]}</h1>
+      <h1 className={styles.header}>{days[day]}</h1>
       <section>{meals.map(RecipeCard)}</section>
     </section>
   );
