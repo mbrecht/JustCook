@@ -11,8 +11,8 @@ export default function WeeklyView({week}: WeeklyViewProps) {
 
   return (
     <section className={className}>
-      {week.map((meals, i) => (
-        <Day meals={meals} day={i} key={i} />
+      {week.map((meals, day) => (
+        <Day meals={meals} day={day} key={day} />
       ))}
     </section>
   );
