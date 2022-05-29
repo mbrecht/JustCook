@@ -1,10 +1,20 @@
 .container {
+  --max-container-width: calc(calc(32 + var(--meal-card-width)) * 7);
   display: flex;
-  width: clamp(160px, 100%, calc(240px * 7));
+  width: clamp(var(--meal-card-width), 100%, var(--max-container-width));
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .header {
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    width: var(--meal-card-width);
+    row-gap: 64px;
+  }
 }

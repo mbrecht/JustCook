@@ -1,5 +1,5 @@
 .container {
-  max-width: 160px;
+  max-width: var(--meal-card-width);
   text-decoration: none;
   display: flex;
   background-color: rgb(245, 244, 244);
