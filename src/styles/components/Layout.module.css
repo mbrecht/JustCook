@@ -1,0 +1,11 @@
+.container {
+  min-height: 128px;
+  display: flex;
+  align-items: center;
+}
+
+.title_container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
