@@ -7,3 +7,12 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* GLOBAL VARIABLES */
+:root {
+  /* Meal Card */
+  --meal-card-width: 160px;
+
+  /* Weekly View */
+  --max-container-width: calc(calc(32 + var(--meal-card-width)) * 7);
+}
