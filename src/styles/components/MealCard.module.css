@@ -23,7 +23,7 @@
 .thumbnail {
   width: auto;
   height: auto;
-  max-width: 100%;
+  max-width: var(--meal-card-width);
   min-height: 100%;
   object-fit: cover;
   object-position: 50% 50%;

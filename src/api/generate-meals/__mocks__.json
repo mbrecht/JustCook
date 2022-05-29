@@ -1,47 +1,139 @@
 {
   "meals": [
     {
-      "category": ["grill"],
-      "thumbnail": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F07%2F13%2FUltimate-Veggie-Burgers-FT-Recipe-0821.jpg&q=60",
-      "title": "burger",
-      "url": "/"
+      "category": ["americana", "vegetarian"],
+      "thumbnail": "https://shelfcooking.com/wp-content/uploads/2020/10/buffalo-cauliflower-recipe.jpg",
+      "title": "Buffalo Cauliflower",
+      "url": "https://shelfcooking.com/buffalo-cauliflower-recipe/"
     },
     {
-      "category": ["pasta"],
-      "thumbnail": "https://i2.wp.com/hipfoodiemom.com/wp-content/uploads/2020/04/IMG_9525-2.jpg",
-      "title": "spaghetti",
-      "url": "/"
+      "category": ["soup", "vegetarian"],
+      "thumbnail": "https://shelfcooking.com/wp-content/uploads/2020/03/Broccoli-Cheddar-Soup.jpg",
+      "title": "Broccoli Soup",
+      "url": "https://shelfcooking.com/broccoli-cheddar-soup/"
     },
     {
-      "category": ["wraps"],
-      "thumbnail": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Buffalo-Chicken-Wraps-scaled.jpg",
-      "title": "buffalo chicken wrap",
-      "url": "/"
+      "category": ["mexican", "wraps", "grill"],
+      "thumbnail": "https://gypsyplate.com/wp-content/uploads/2019/08/chili-lime-shrimp-tacos-with-mango-salsa_5.jpg",
+      "title": "Shrimp Tacos",
+      "url": "https://gypsyplate.com/chili-lime-shrimp-tacos-with-mango-salsa/"
     },
     {
-      "category": ["vegetarian", "wraps"],
-      "thumbnail": "https://www.culinaryhill.com/wp-content/uploads/2020/04/Ultimate-Veggie-Wrap-Recipe-Culinary-Hill-LR-04SQ.jpg",
-      "title": "veggie wraps",
-      "url": "/"
+      "category": ["mexican", "wraps"],
+      "thumbnail": "https://thegirlonbloor.com/wp-content/uploads/2015/03/Pulled-Chicken-Burrito-2.webp",
+      "title": "Chicken Burrito",
+      "url": "https://thegirlonbloor.com/pulled-chicken-burrito-recipe/"
     },
     {
-      "category": ["slow-cooker"],
-      "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/25/1498147867-delish-easy-crockpot-chicken-and-dumplings-horizontal-1024.jpg",
-      "title": "crock pot chicken and dumplings",
-      "url": "/"
+      "category": ["mexican", "grill"],
+      "thumbnail": "https://www.cookingclassy.com/wp-content/uploads/2018/04/chicken-street-tacos-20-600x900.jpg",
+      "title": "Street Tacos",
+      "url": "https://www.cookingclassy.com/grilled-chicken-and-avocado-street-tacos/"
     },
     {
       "category": ["mexican"],
-      "thumbnail": "https://girlheartfood.com/wp-content/uploads/2020/06/Ground-Beef-Quesadillas-4.jpg",
-      "title": "quesadillas",
-      "url": "/"
+      "thumbnail": "https://natashaskitchen.com/wp-content/uploads/2020/04/Pork-Carnitas-Recipe-6.jpg",
+      "title": "Pork Carnitas",
+      "url": "https://natashaskitchen.com/pork-carnitas/"
     },
     {
-      "category": ["americana"],
-      "thumbnail": "https://assets.epicurious.com/photos/57a8a45db10b4fb03f234f34/master/pass/southern-fried-chicken.jpg",
-      "title": "fried chicken",
-      "url": "/"
+      "category": ["soup", "vegetarian"],
+      "thumbnail": "https://cookieandkate.com/images/2019/10/best-butternut-squash-soup-recipe-2-768x1154.jpg",
+      "title": "Butternut Squash Soup",
+      "url": "https://cookieandkate.com/roasted-butternut-squash-soup/"
+    },
+    {
+      "category": ["soup", "comfort", "vegetarian"],
+      "thumbnail": "https://houseofyumm.com/wp-content/uploads/2021/08/Potato-Soup-7-680x520.jpg",
+      "title": "Potato Soup",
+      "url": "https://houseofyumm.com/potato-soup/"
+    },
+    {
+      "category": ["soup"],
+      "thumbnail": "https://cookieandkate.com/images/2020/01/best-carrot-soup-recipe-3-768x1154.jpg",
+      "title": "Carrot Soup",
+      "url": "https://cookieandkate.com/roasted-carrot-soup-recipe/"
+    },
+    {
+      "category": ["comfort", "americana", "casserole"],
+      "thumbnail": "https://insanelygoodrecipes.com/wp-content/uploads/2021/11/Cheesy-and-Creamy-Hash-Brown-Casserole-683x1024.webp",
+      "title": "Hash Brown Casserole",
+      "url": "https://insanelygoodrecipes.com/cracker-barrel-hash-brown-casserole/"
+    },
+    {
+      "category": ["comfort", "americana", "casserole"],
+      "thumbnail": "https://insanelygoodrecipes.com/wp-content/uploads/2022/01/Cheesy-and-Spicy-John-Wayne-Casserole-with-Ground-Beef-and-Spices-683x1024.webp",
+      "title": "John Wayne Casserole",
+      "url": "https://insanelygoodrecipes.com/john-wayne-casserole/"
+    },
+    {
+      "category": ["casserole", "mexican"],
+      "thumbnail": "https://insanelygoodrecipes.com/wp-content/uploads/2021/09/Homemade-Taco-Casserole-683x1024.webp",
+      "title": "Taco Casserole",
+      "url": "https://insanelygoodrecipes.com/taco-casserole/"
+    },
+    {
+      "category": ["casserole"],
+      "thumbnail": "https://life-in-the-lofthouse.com/wp-content/uploads/2019/04/Teriyaki-Chicken-Casserole_new.jpg",
+      "title": "Teriyaki Casserole",
+      "url": "https://life-in-the-lofthouse.com/teriyaki-chicken-casserole/"
+    },
+    {
+      "category": ["wraps"],
+      "thumbnail": "https://www.homemademastery.com/wp-content/uploads/2020/03/IMG_4882-768x1151.jpg",
+      "title": "Med Chicken Wrap",
+      "url": "https://www.homemademastery.com/mediterranean-chicken-wraps/"
+    },
+    {
+      "category": ["wraps"],
+      "thumbnail": "https://www.homemademastery.com/wp-content/uploads/2021/01/IMG_9663-768x1151.jpg",
+      "title": "Spicy Chicken Wraps",
+      "url": "https://www.homemademastery.com/healthy-spicy-chicken-wraps/"
+    },
+    {
+      "category": ["wraps", "vegetarian"],
+      "thumbnail": "https://www.beautybites.org/wp-content/uploads/2016/03/taco-new_prettier.jpg",
+      "title": "Lentil Wraps",
+      "url": "https://www.beautybites.org/beauty-food-recopes-evolved-lentil-wraps/"
+    },
+    {
+      "category": ["pasta", "mexican"],
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2022/02/One-Pot-Taco-Pasta-V2.jpg",
+      "title": "Beef Taco Pasta",
+      "url": "https://www.budgetbytes.com/beef-taco-pasta/"
+    },
+    {
+      "category": ["casserole", "pasta"],
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2022/02/Tuna-Noodle-Casserole-V2.jpg",
+      "title": "Tuna Noodle Casserole",
+      "url": "https://www.budgetbytes.com/tuna-noodle-casserole/"
+    },
+    {
+      "category": ["pasta", "vegetarian", "comfort"],
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2021/12/Homemade-Mac-and-Cheese-V3.jpg",
+      "title": "Mac & Cheese",
+      "url": "https://www.budgetbytes.com/extra-cheesy-homemade-mac-and-cheese/"
+    },
+    {
+      "category": ["pasta", "vegetarian"],
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2021/10/Creamy-Mushroom-Pasta-V4.jpg",
+      "title": "Mushroom Pasta",
+      "url": "https://www.budgetbytes.com/one-pot-creamy-mushroom-pasta/"
+    },
+    {
+      "category": ["vegetarian", "pasta"],
+      "thumbnail": "https://www.budgetbytes.com/wp-content/uploads/2021/10/One-Pot-Veggie-Pasta-V1.jpg",
+      "title": "Veggie Pasta",
+      "url": "https://www.budgetbytes.com/one-pot-veggie-pasta/"
     }
   ],
-  "template": [["grill"], ["pasta"], ["wraps"], ["vegetarian"], ["slow-cooker"], ["mexican"], ["americana"]]
+  "template": [
+    ["grill", "vegetarian", "wraps"],
+    ["pasta", "mexican", "americana", "soup"],
+    ["wraps", "americana", "casserole", "soup"],
+    ["vegetarian", "wraps", "grill", "soup"],
+    ["grill", "comfort", "americana"],
+    ["grill", "americana", "comfort", "wraps"],
+    ["grill", "americana", "comfort", "wraps"]
+  ]
 }
