@@ -9,8 +9,10 @@ const data = {
 };
 
 describe('MealCard component', () => {
+  let dom;
+
   beforeEach(() => {
-    render(<MealCard {...data} />);
+    dom = render(<MealCard {...data} />);
   });
 
   it('should display a thumbnail', () => {
@@ -19,7 +21,7 @@ describe('MealCard component', () => {
   });
 
   it('should display a title', () => {
-    const p = screen.getByRole('link', {name: data.title});
+    const p = dom.container.querySelector('.title');
     expect(p).toBeDefined();
   });
 

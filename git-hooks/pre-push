@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
 yarn test
+
+yarn build
