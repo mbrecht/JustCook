@@ -11,7 +11,7 @@ export default async function handler(
     default: defaultHandler,
   };
 
-  const handler = handlers[req.method] || handlers.default;
+  const callback = handlers[req.method] || handlers.default;
 
-  return handler(req, res);
+  return callback(req, res);
 }
