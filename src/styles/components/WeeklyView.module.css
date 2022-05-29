@@ -1,5 +1,4 @@
 .container {
-  --max-container-width: calc(calc(32 + var(--meal-card-width)) * 7);
   display: flex;
   width: clamp(var(--meal-card-width), 100%, var(--max-container-width));
   justify-content: space-between;
@@ -11,7 +10,7 @@
   text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1344px) {
   .container {
     flex-direction: column;
     width: var(--meal-card-width);
