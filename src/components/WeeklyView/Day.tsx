@@ -19,9 +19,10 @@ const days = [
 ];
 
 export default function Day({meals, day}: DayProps) {
+  const className = [styles.header, 'weekly-view-day'].join(' ');
   return (
     <section>
-      <h1 className={styles.header}>{days[day]}</h1>
+      <h1 className={className}>{days[day]}</h1>
       <section>{meals.map(RecipeCard)}</section>
     </section>
   );
