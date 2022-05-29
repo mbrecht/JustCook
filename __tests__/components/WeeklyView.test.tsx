@@ -24,7 +24,6 @@ describe('weekly view', () => {
   });
 
   it('should display a title for each day', async () => {
-    screen.debug();
     const titles = await dom.container.querySelectorAll('h1');
     expect(titles).toHaveLength(7);
   });
