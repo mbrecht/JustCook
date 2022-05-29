@@ -20,7 +20,6 @@ const days = [
 
 export default function Day({meals, day}: DayProps) {
   const className = [styles.header, 'weekly-view-day'].join(' ');
-  debugger;
   return (
     <section>
       <h1 className={className}>{days[day]}</h1>
