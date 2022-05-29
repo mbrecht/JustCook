@@ -1,6 +1,6 @@
 import Meal from '../../src/core/entities/Meal';
 import MealPlanner from '../../src/pages/meal-planner';
-import {render, screen, waitFor} from '@testing-library/react';
+import {render, waitFor} from '@testing-library/react';
 import React from 'react';
 
 const meals: Meal[] = [
