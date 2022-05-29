@@ -1,6 +1,7 @@
 import MealPlanner from './meal-planner';
-import Link from 'next/link';
-import React from 'react';
+
+// import Link from 'next/link';
+// import React from 'react';
 
 export default MealPlanner;
 
