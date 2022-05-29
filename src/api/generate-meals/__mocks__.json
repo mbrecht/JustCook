@@ -43,5 +43,13 @@
       "url": "/"
     }
   ],
-  "template": [["grill"], ["pasta"], ["wraps"], ["vegetarian"], ["slow-cooker"], ["mexican"], ["americana"]]
+  "template": [
+    ["grill", "vegetarian", "wraps"],
+    ["pasta", "mexican", "americana"],
+    ["wraps", "americana", "casserole"],
+    ["vegetarian", "wraps", "grill"],
+    ["slow-cooker", "grill", "comfort", "americana"],
+    ["grill", "americana", "comfort", "wraps"],
+    ["grill", "americana", "comfort", "wraps"]
+  ]
 }
