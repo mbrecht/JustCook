@@ -2,7 +2,7 @@ import Meal from '../../core/entities/Meal';
 import styles from '../../styles/components/MealCard.module.css';
 import Image from 'next/image';
 
-export default function MealCard({thumbnail, title, url}: Meal) {
+export default function MealCard({thumbnail = '', title, url}: Meal) {
   const classes = [styles.container, 'meal-card'].join(' ');
 
   return (
