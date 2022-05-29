@@ -3,7 +3,7 @@
     "browser": true,
     "node": true
   },
-  "extends": ["prettier", "next/core-web-vitals"],
+  "extends": ["next/core-web-vitals"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -11,7 +11,6 @@
     "ecmaVersion": 8,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
   "rules": {
     "curly": 2,
     "dot-notation": 2,
@@ -42,7 +41,6 @@
     "prefer-arrow-callback": 2,
     "prefer-const": 2,
     "prefer-promise-reject-errors": 2,
-    "prettier/prettier": 2,
     "sort-vars": 2,
     "strict": [2, "global"]
   }
