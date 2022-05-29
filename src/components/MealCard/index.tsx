@@ -1,5 +1,5 @@
 import Meal from '../../core/entities/Meal';
-import styles from '../../styles/components/RecipeCard.module.css';
+import styles from '../../styles/components/MealCard.module.css';
 
 export default function MealCard({thumbnail, title, url}: Meal) {
   const classes = [styles.container, 'meal-card'].join(' ');
