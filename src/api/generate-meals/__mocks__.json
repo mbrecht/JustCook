@@ -2,31 +2,45 @@
   "meals": [
     {
       "category": ["grill"],
-      "title": "burger"
+      "thumbnail": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F07%2F13%2FUltimate-Veggie-Burgers-FT-Recipe-0821.jpg&q=60",
+      "title": "burger",
+      "url": "/"
     },
     {
       "category": ["pasta"],
-      "title": "spaghetti"
+      "thumbnail": "https://i2.wp.com/hipfoodiemom.com/wp-content/uploads/2020/04/IMG_9525-2.jpg",
+      "title": "spaghetti",
+      "url": "/"
     },
     {
       "category": ["wraps"],
-      "title": "buffalo chicken wrap"
+      "thumbnail": "https://www.thecountrycook.net/wp-content/uploads/2021/02/thumbnail-Buffalo-Chicken-Wraps-scaled.jpg",
+      "title": "buffalo chicken wrap",
+      "url": "/"
     },
     {
       "category": ["vegetarian", "wraps"],
-      "title": "veggie wraps"
+      "thumbnail": "https://www.culinaryhill.com/wp-content/uploads/2020/04/Ultimate-Veggie-Wrap-Recipe-Culinary-Hill-LR-04SQ.jpg",
+      "title": "veggie wraps",
+      "url": "/"
     },
     {
       "category": ["slow-cooker"],
-      "title": "crock pot chicken and dumplings"
+      "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/25/1498147867-delish-easy-crockpot-chicken-and-dumplings-horizontal-1024.jpg",
+      "title": "crock pot chicken and dumplings",
+      "url": "/"
     },
     {
       "category": ["mexican"],
-      "title": "quesadillas"
+      "thumbnail": "https://girlheartfood.com/wp-content/uploads/2020/06/Ground-Beef-Quesadillas-4.jpg",
+      "title": "quesadillas",
+      "url": "/"
     },
     {
       "category": ["americana"],
-      "title": "fried chicken"
+      "thumbnail": "https://assets.epicurious.com/photos/57a8a45db10b4fb03f234f34/master/pass/southern-fried-chicken.jpg",
+      "title": "fried chicken",
+      "url": "/"
     }
   ],
   "template": [["grill"], ["pasta"], ["wraps"], ["vegetarian"], ["slow-cooker"], ["mexican"], ["americana"]]

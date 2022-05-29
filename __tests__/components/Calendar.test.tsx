@@ -2,25 +2,33 @@ import Calendar, {CalendarProps} from '../../src/components/Calendar';
 import Meal from '../../src/core/entities/Meal';
 import {render, screen} from '@testing-library/react';
 
-describe('Calendar component weekly view', async () => {
-  const weekMeals: [Meal] = new Array(7).fill({title: '', category: []}).map(
-    (_, i): Meal => ({
-      title: `meal-${i}`,
-      category: ['cat1'],
-    }),
-  );
+describe('Calendar component weekly view', () => {
+  const weekMeals: Array<Array<Meal>> = new Array(7)
+    .fill({title: '', category: []})
+    .map(
+      (_, i): Array<Meal> => [
+        {
+          title: `meal-${i}`,
+          category: ['cat1'],
+          thumbnail: 'http://test.thumbnail.com/',
+          url: 'https://www.foo.bar/',
+        },
+      ],
+    );
 
   const props: CalendarProps = {
     view: 'weekly',
     data: weekMeals,
   };
 
+  let dom;
+
   beforeEach(() => {
-    render(<Calendar {...props} />);
+    dom = render(<Calendar {...props} />);
   });
 
-  it('should display 7 days', () => {
-    const days = await screen.findAllByRole('section');
+  it('should display 7 days', async () => {
+    const days = dom.container.querySelectorAll('.weekly-view-day');
     expect(days).toHaveLength(7);
   });
 });

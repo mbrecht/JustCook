@@ -15,7 +15,6 @@ describe('MealCard component', () => {
 
   it('should display a thumbnail', () => {
     const img = screen.getByRole('img');
-    screen.debug();
     expect(img.src).toContain(data.thumbnail);
   });
 
