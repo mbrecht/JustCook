@@ -16,7 +16,6 @@ export default function useMealPlanner() {
     fetch('/api/generate-meals')
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         setMeals(data.map(day => [day]));
       });
   }, []);
