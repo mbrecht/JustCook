@@ -5,15 +5,5 @@ import Calendar from '../Calendar';
 import React, {useEffect, useState} from 'react';
 
 export default function MealPlanner() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('/api/generate-meals')
-      .then(res => res.json())
-      .then(data => {
-        setData(data.map(meal => [meal]));
-      });
-  }, []);
-
-  return <div>{data && <Calendar view="weekly" data={data} />}</div>;
+  return <div>Meal Planner</div>;
 }
