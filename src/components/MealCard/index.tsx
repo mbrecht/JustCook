@@ -1,8 +1,8 @@
-import Recipe from '../../core/entities/Recipe';
+import Meal from '../../core/entities/Meal';
 import styles from '../../styles/components/RecipeCard.module.css';
 
-export default function RecipeCard({thumbnail, title, url}: Recipe) {
-  const classes = [styles.container, 'recipe-card'].join(' ');
+export default function MealCard({thumbnail, title, url}: Meal) {
+  const classes = [styles.container, 'meal-card'].join(' ');
 
   return (
     <div className={classes}>

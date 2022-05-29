@@ -1,8 +1,8 @@
-import Recipe from '../../core/entities/Recipe';
-import RecipeCard from '../RecipeCard';
+import Meal from '../../core/entities/Meal';
+import RecipeCard from '../MealCard';
 
 export type DayProps = {
-  recipes: Recipe[];
+  meals: Array<Meal>;
   day: number;
 };
 
@@ -17,11 +17,11 @@ const days = [
   'Sunday',
 ];
 
-export default function Day({recipes, day}: DayProps) {
+export default function Day({meals, day}: DayProps) {
   return (
     <section>
       <h1>{days[day]}</h1>
-      <section>{recipes.map(RecipeCard)}</section>
+      <section>{meals.map(RecipeCard)}</section>
     </section>
   );
 }

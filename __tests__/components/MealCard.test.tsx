@@ -1,15 +1,16 @@
-import RecipeCard from '../../src/components/RecipeCard';
+import MealCard from '../../src/components/MealCard';
 import {render, screen} from '@testing-library/react';
 
 const data = {
   thumbnail: 'http://www.test.com/pic',
   title: 'Chicken Nuggets',
   url: 'http://www.tastychickennuggets.com/',
+  category: ['test'],
 };
 
-describe('RecipeCard component', () => {
+describe('MealCard component', () => {
   beforeEach(() => {
-    render(<RecipeCard {...data} />);
+    render(<MealCard {...data} />);
   });
 
   it('should display a thumbnail', () => {

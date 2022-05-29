@@ -1,14 +1,14 @@
 import WeeklyView from '../../src/components/WeeklyView';
 import Meal from '../../src/core/entities/Meal';
-import Recipe from '../../src/core/entities/Recipe';
 import {RenderResult, render, screen} from '@testing-library/react';
 import {ReactElement} from 'react';
 
-const meals: Array<Array<Recipe>> = new Array<Recipe[]>(7).fill([
+const meals: Array<Array<Meal>> = new Array<Array<Meal>>(7).fill([
   {
     title: '',
     thumbnail: '',
     url: '',
+    category: [],
   },
 ]);
 

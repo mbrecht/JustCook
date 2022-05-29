@@ -1,16 +1,16 @@
-import Recipe from '../../core/entities/Recipe';
-import RecipeCard from '../RecipeCard';
+import Meal from '../../core/entities/Meal';
+import RecipeCard from '../MealCard';
 import Day from './Day';
 
 type WeeklyViewProps = {
-  week: Array<Array<Recipe>>;
+  week: Array<Array<Meal>>;
 };
 
 export default function WeeklyView({week}: WeeklyViewProps) {
   return (
     <section>
-      {week.map((recipes, i) => (
-        <Day recipes={recipes} day={i} key={JSON.stringify(recipes)} />
+      {week.map((meals, i) => (
+        <Day meals={meals} day={i} key={JSON.stringify(meals)} />
       ))}
     </section>
   );
