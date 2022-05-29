@@ -1,6 +1,5 @@
 import Meal from '../../core/entities/Meal';
 import styles from '../../styles/components/MealCard.module.css';
-import Image from 'next/image';
 
 export default function MealCard({thumbnail = '', title, url}: Meal) {
   const classes = [styles.container, 'meal-card'].join(' ');
@@ -9,7 +8,7 @@ export default function MealCard({thumbnail = '', title, url}: Meal) {
     <div className={classes}>
       <a href={url}>
         <p className={styles.title}>{title}</p>
-        <Image
+        <img
           src={thumbnail}
           className={styles.thumbnail}
           alt={`thumbnail for ${title}`}
