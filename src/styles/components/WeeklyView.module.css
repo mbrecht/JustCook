@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  width: clamp(160px, 100%, calc(240px * 7));
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header {
+  text-align: center;
+}
