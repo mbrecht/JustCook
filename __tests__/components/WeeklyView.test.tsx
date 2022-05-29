@@ -29,8 +29,8 @@ describe('weekly view', () => {
     expect(titles).toHaveLength(7);
   });
 
-  it('should display a recipe card for each day', async () => {
-    const cards = dom.container.querySelectorAll('.recipe-card');
+  it('should display a meal card for each day', async () => {
+    const cards = dom.container.querySelectorAll('.meal-card');
     expect(cards).toHaveLength(7);
   });
 });
