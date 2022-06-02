@@ -3,16 +3,20 @@ import GET from '../../api/meals/get';
 import Cors from 'cors';
 import {NextApiRequest, NextApiResponse} from 'next';
 
+// Initializing the cors middleware
 const cors = Cors({
   methods: ['GET', 'HEAD'],
 });
 
-function applyMiddleware(req, res, cb) {
+// Helper method to wait for a middleware to execute before continuing
+// And to throw an error when an error happens in a middleware
+function runMiddleware(req, res, fn) {
   return new Promise((resolve, reject) => {
-    cb(req, res, result => {
+    fn(req, res, result => {
       if (result instanceof Error) {
         return reject(result);
       }
+
       return resolve(result);
     });
   });
@@ -27,7 +31,7 @@ export default async function handler(
     default: defaultHandler,
   };
 
-  await applyMiddleware(req, res, cors);
+  await runMiddleware(req, res, cors);
 
   const callback = handlers[req.method] || handlers.default;
 
