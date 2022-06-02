@@ -10,7 +10,9 @@ const cors = Cors({
 function applyMiddleware(req, res, cb) {
   return new Promise((resolve, reject) => {
     cb(req, res, result => {
-      if (result instanceof Error) return reject(result);
+      if (result instanceof Error) {
+        return reject(result);
+      }
       return resolve(result);
     });
   });
